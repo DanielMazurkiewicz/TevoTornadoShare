@@ -1,0 +1,8 @@
+M104 S0 ;extruder heater off
+M140 S0 ;heated bed heater off (if you have it)
+G91 ;relative positioning
+G1 E-1 F300  ;retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+0.5 E-5 X-20 Y-20 F9000 ;move Z up a bit and retract filament even more
+G90 ;absolute positioning
+G1 X0 Y299 F3600 ;move extruder out of the way by moving the baseplate to the front for easier access to printed object
+M84 ;steppers off

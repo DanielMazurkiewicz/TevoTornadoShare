@@ -1,0 +1,15 @@
+1. Find a firmware with mesh bed leveling enabled
+2. Install on your computer Arduino IDE (https://www.arduino.cc/en/Main/Software)
+3. Connect your computer to printer via USB
+4. Flash new firmware
+5. Prepare test print object made of small circles (6-10mm) placed at mesh points (I use 5x5 mesh so it gives 25 circles).  Make circles height of 0.3mm
+6. Slice circles object the way so first layer is also 0.3mm
+7. Print circles
+8. Measure circles with scale. If to thick, it means that your Z axis at given mesh point is to high, if too thin it means that your Z axis is too low. If about 0.3-0.32mm then it is ok. Best write it down in some spreadsheet file and compare results from different prints
+9. Based on measurement results prepare G-codes (M421)
+10. Run that G-code
+11. Save leveling mesh to printers eeprom
+12. Enable mesh before print - best in starting script - with M420 S1 G-Code
+
+
+All necesarry things (especially, spreadsheet example, firmware, g-codes, stl) you should find in this repo, so you don't have to go through all steps of this instruction manually.
