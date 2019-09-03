@@ -1,1 +1,0 @@
-Firmware for stock Tevo Tornado, usefull especially if you have issues with bed leveling (bed is curved or so). Don't forget to set starting and ending scripts (attached in file) and to use Marlin Volumetric flavour. 

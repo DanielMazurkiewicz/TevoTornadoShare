@@ -1,5 +1,0 @@
-G28 ; home all axes
-G1 Z5 F5000 ; lift nozzle
-M900 K55
-M420 S1 ;use mesh from bed leveling
-M117 Printing...

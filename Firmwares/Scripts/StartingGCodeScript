@@ -1,0 +1,5 @@
+;Script to use when mesh bed leveling is used
+G28 ; home all axes
+G1 Z5 F5000 ; lift nozzle
+M420 S1 ;use mesh from bed leveling
+M117 Printing...
